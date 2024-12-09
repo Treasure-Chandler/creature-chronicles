@@ -1,2 +1,1 @@
-# creature-chronicles
-A simple website that displays media and facts of certain animals.
+(This README will be worked on once the extension is underway. Please sit tight!)
