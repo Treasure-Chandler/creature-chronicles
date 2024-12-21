@@ -1,0 +1,14 @@
+.intro {
+    background-color: rgb(251, 133, 208);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    background-color: rgb(247, 183, 225);
+}
+
+h1, h3, h4, p {
+    text-align: center;
+}
