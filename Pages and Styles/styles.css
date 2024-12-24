@@ -2,7 +2,7 @@
     Made by Treasure Chandler
 
     This is the CSS file that will stylize the HTML creature pages.
-*/
+*/ 
 
 /* Will move the pawprint GIF on the welcome page to be at the bottom left corner */
 .bottom-left {
@@ -11,17 +11,37 @@
     left: 0;
 }
 
+/* Will move the GitHub logo to the bottom center of the screen */
+.bottom-center {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+/* Will move the paw with magnifying glass on the welcome page to be at the top right corner */
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* Will move each row of animal names to the center of the screen */
+.center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
 /* Will predefine the first three items in the first row to be on the same line */
 .first-row-align p {
     display: inline-block;
-}
-
-/* Overall style of the background page */
-.intro {
-    background-color: rgb(251, 133, 208);
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
 
 /* Will predefine the text alignment and margin values for the first item in a row */
@@ -43,28 +63,29 @@
     margin-right: 200px;
 }
 
-/* Will move each row of animal names to the center of the screen */
-.center-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin: 20px auto;
+/* Overall style of the background page */
+.intro {
+    background-color: rgb(251, 133, 208);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
-/* Will move the paw with magnifying glass on the welcome page to be at the top right corner */
-.top-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 20px;
-    margin-top: 10px;
+/* Will style the text in italics */
+.italics {
+    font-style: italic;
+}
+
+/* Gives some top padding to the "h3" in the first section */
+.top-padding {
+    padding-top: 25px;
 }
 
 body {
     background-color: rgb(247, 183, 225);
-
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1, h3, h4, p {
