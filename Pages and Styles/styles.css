@@ -1,3 +1,22 @@
+/* 
+    Made by Treasure Chandler
+
+    This is the CSS file that will stylize the HTML creature pages.
+*/
+
+/* Will move the pawprint GIF on the welcome page to be at the bottom left corner */
+.bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Will predefine the first three items in the first row to be on the same line */
+.first-row-align p {
+    display: inline-block;
+}
+
+/* Overall style of the background page */
 .intro {
     background-color: rgb(251, 133, 208);
     margin-left: auto;
@@ -5,10 +24,50 @@
     width: 50%;
 }
 
+/* Will predefine the text alignment and margin values for the first item in a row */
+.item-one {
+    text-align: left;
+    margin-left: 200px;
+}
+
+/* Will predefine the text alignment and margin values for the second item in a row */
+.item-two {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Will predefine the text alignment and margin values for the third item in a row */
+.item-three {
+    text-align: right;
+    margin-right: 200px;
+}
+
+/* Will move each row of animal names to the center of the screen */
+.center-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+/* Will move the paw with magnifying glass on the welcome page to be at the top right corner */
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
 body {
     background-color: rgb(247, 183, 225);
+
 }
 
 h1, h3, h4, p {
     text-align: center;
 }
+
