@@ -81,8 +81,21 @@
     padding-top: 25px;
 }
 
+/* Establishes the size of the GitHub logo */
+#Git {
+    height: 50px;
+    width: 50px;
+}
+
+/* Changes the GitHub logo to appear white when hovered over */
+#Git:hover {
+    content: url(githubwhite.png);
+    height: 50px;
+    width: 50px;
+}
+
 body {
-    background-color: rgb(247, 183, 225);
+    background-color: rgb(246, 201, 230);
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
@@ -91,4 +104,3 @@ body {
 h1, h3, h4, p {
     text-align: center;
 }
-
