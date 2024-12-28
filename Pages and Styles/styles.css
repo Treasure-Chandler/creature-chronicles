@@ -20,13 +20,11 @@
     margin-bottom: 10px;
 }
 
-/* Will move the paw with magnifying glass on the welcome page to be at the top right corner */
-.top-right {
+.top-right-intro {
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 /* Will move each row of animal names to the center of the screen */
@@ -63,12 +61,13 @@
     margin-right: 200px;
 }
 
-/* Overall style of the background page */
+/* Overall style of the "intro" at the top of the page */
 .intro {
-    background-color: rgb(251, 133, 208);
+    position: relative;
+    background-color: rgb(201, 107, 166);
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 45%;
 }
 
 /* Will style the text in italics */
@@ -89,7 +88,7 @@
 
 /* Changes the GitHub logo to appear white when hovered over */
 #Git:hover {
-    content: url(githubwhite.png);
+    content: url(/Media/githubwhite.png);
     height: 50px;
     width: 50px;
 }
