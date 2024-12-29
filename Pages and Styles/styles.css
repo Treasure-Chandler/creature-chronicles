@@ -20,6 +20,7 @@
     margin-bottom: 10px;
 }
 
+/* Positions the "sparklepaws to be in the top right corner of the intro div*/
 .top-right-intro {
     position: absolute;
     top: 0;
@@ -38,27 +39,10 @@
 }
 
 /* Will predefine the first three items in the first row to be on the same line */
-.first-row-align p {
-    display: inline-block;
-}
-
-/* Will predefine the text alignment and margin values for the first item in a row */
-.item-one {
-    text-align: left;
-    margin-left: 200px;
-}
-
-/* Will predefine the text alignment and margin values for the second item in a row */
-.item-two {
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-/* Will predefine the text alignment and margin values for the third item in a row */
-.item-three {
-    text-align: right;
-    margin-right: 200px;
+.first-row-align {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 /* Overall style of the "intro" at the top of the page */
@@ -77,7 +61,22 @@
 
 /* Gives some top padding to the "h3" in the first section */
 .top-padding {
-    padding-top: 25px;
+    padding-top: 15px;
+}
+
+/* Animal text regular url color */
+#Animalstext {
+    color: white;
+}
+
+/* Animal text hovered url color */
+#Animalstext:hover {
+    color: rgb(254, 157, 242);
+}
+
+/* Animal text visited url color */
+#Animalstext:visited {
+    color: rgb(219, 122, 219);
 }
 
 /* Establishes the size of the GitHub logo */
@@ -91,6 +90,23 @@
     content: url(/Media/githubwhite.png);
     height: 50px;
     width: 50px;
+}
+
+/* Will give the specified element rounded corners */
+#Round {
+    border-radius: 10px;
+}
+
+/* Creates a fake rounded button behind the animal text links*/
+#Rfbutton {
+    background-color: rgb(182, 103, 162);
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 body {
