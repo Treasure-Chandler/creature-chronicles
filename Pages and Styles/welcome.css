@@ -13,22 +13,29 @@
     margin-bottom: 10px;
 }
 
+/* Will give the h3 element on the welcome page some bottom padding */
+.bottom-padding {
+    padding-bottom: 10px;
+}
+
 /* Will move each row of animal names to the center of the screen */
 .center-section {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin: 20px auto;
 }
 
-/* Will predefine the 3 animal buttons in each row to be on the same line */
-.row-align {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-    padding-bottom: 40px;
+/* Styles the "developer text" in the footer */
+.developer-text {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+}
+
+/* Gives the GitHub logo in the footer some bottom padding */
+.git-bottom-padding {
+    padding-bottom: 38px;
 }
 
 /* Overall style of the "intro" at the top of the page */
@@ -37,7 +44,25 @@
     background-color: rgb(222, 134, 190);
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 40%;
+}
+
+/* Overall style of h3's "intro" */
+.intro-two {
+    position: relative;
+    background-color: rgb(255, 205, 237);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Overall style of h4's "intro" */
+.intro-three {
+    position: relative;
+    background-color: rgb(255, 205, 237);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /* Will style the text in italics */
@@ -59,9 +84,23 @@
     font-style: normal;
 }
 
+/* Will predefine the 3 animal buttons in each row to be on the same line */
+.row-align {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-bottom: 40px;
+}
+
 /* Gives some top padding to the "h3" in the first section */
 .top-padding {
     padding-top: 15px;
+}
+
+/* Adds a top and bottom margin to h4's "intro" */
+.vertical-margins {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Animal text regular url color */
@@ -74,6 +113,11 @@
     color: rgb(66, 0, 58);
 }
 
+/* Animal text active url color */
+#Animalstext:active {
+    color: rgb(255, 205, 238);
+}
+
 /* Animal text visited url color */
 #Animalstext:visited {
     color: rgb(125, 85, 125);
@@ -83,11 +127,12 @@
 #Git {
     height: 50px;
     width: 50px;
+    margin-bottom: 0;
 }
 
 /* Changes the GitHub logo to appear white when hovered over */
 #Git:hover {
-    content: url(/Media/githubwhite.png);
+    content: url(/Media/githubpink.png);
     height: 50px;
     width: 50px;
 }
