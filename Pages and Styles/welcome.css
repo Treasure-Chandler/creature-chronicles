@@ -4,13 +4,6 @@
     This is the CSS file that will stylize the HTML creature pages.
 */ 
 
-/* Will move the pawprint GIF on the welcome page to be at the bottom left corner */
-.bottom-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 /* Will move the GitHub logo to the bottom center of the screen */
 .bottom-center {
     position: fixed;
@@ -18,14 +11,6 @@
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
-}
-
-/* Positions the "sparklepaws to be in the top right corner of the intro div*/
-.top-right-intro {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 10px;
 }
 
 /* Will move each row of animal names to the center of the screen */
@@ -38,17 +23,18 @@
     margin: 20px auto;
 }
 
-/* Will predefine the first three items in the first row to be on the same line */
-.first-row-align {
+/* Will predefine the 3 animal buttons in each row to be on the same line */
+.row-align {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 70px;
+    padding-bottom: 40px;
 }
 
 /* Overall style of the "intro" at the top of the page */
 .intro {
     position: relative;
-    background-color: rgb(201, 107, 166);
+    background-color: rgb(222, 134, 190);
     margin-left: auto;
     margin-right: auto;
     width: 45%;
@@ -57,6 +43,20 @@
 /* Will style the text in italics */
 .italics {
     font-style: italic;
+}
+
+/* CSS for the "Poppins Light" font */
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+/* CSS for the "Poppins Light" font */
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Gives some top padding to the "h3" in the first section */
@@ -71,12 +71,12 @@
 
 /* Animal text hovered url color */
 #Animalstext:hover {
-    color: rgb(254, 157, 242);
+    color: rgb(66, 0, 58);
 }
 
 /* Animal text visited url color */
 #Animalstext:visited {
-    color: rgb(219, 122, 219);
+    color: rgb(125, 85, 125);
 }
 
 /* Establishes the size of the GitHub logo */
@@ -92,14 +92,9 @@
     width: 50px;
 }
 
-/* Will give the specified element rounded corners */
-#Round {
-    border-radius: 10px;
-}
-
-/* Creates a fake rounded button behind the animal text links*/
+/* Creates a fake rounded button behind the animal text links */
 #Rfbutton {
-    background-color: rgb(182, 103, 162);
+    background-color: rgb(202, 118, 181);
     border-radius: 20px;
     width: 150px;
     height: 30px;
@@ -109,11 +104,27 @@
     text-align: center;
 }
 
+/* Fake rounded button hover color */
+#Rfbutton:hover {
+    background-color: rgb(240, 139, 215);
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Will give the specified element rounded corners */
+#Round {
+    border-radius: 10px;
+}
+
 body {
+    background-image: url(/Media/pawbg.jpg);
     background-color: rgb(246, 201, 230);
     font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 h1, h3, h4, p {
