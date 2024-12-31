@@ -15,7 +15,7 @@
 
 /* Will give the h3 element on the welcome page some bottom padding */
 .bottom-padding {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 /* Will move each row of animal names to the center of the screen */
@@ -51,17 +51,18 @@
 .intro-two {
     position: relative;
     background-color: rgb(255, 205, 237);
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     width: 80%;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Overall style of h4's "intro" */
 .intro-three {
     position: relative;
     background-color: rgb(255, 205, 237);
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
     width: 50%;
 }
 
@@ -100,7 +101,7 @@
 /* Adds a top and bottom margin to h4's "intro" */
 .vertical-margins {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 
 /* Animal text regular url color */
@@ -127,7 +128,7 @@
 #Git {
     height: 50px;
     width: 50px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 /* Changes the GitHub logo to appear white when hovered over */
@@ -135,14 +136,15 @@
     content: url(/Media/githubpink.png);
     height: 50px;
     width: 50px;
+    margin-bottom: 5px;
 }
 
 /* Creates a fake rounded button behind the animal text links */
 #Rfbutton {
     background-color: rgb(202, 118, 181);
     border-radius: 20px;
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,8 +155,8 @@
 #Rfbutton:hover {
     background-color: rgb(240, 139, 215);
     border-radius: 20px;
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,4 +176,9 @@ body {
 
 h1, h3, h4, p {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
 }
