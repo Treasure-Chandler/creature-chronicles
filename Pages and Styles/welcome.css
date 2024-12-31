@@ -1,36 +1,36 @@
 /* 
     Made by Treasure Chandler
 
-    This is the CSS file that will stylize the HTML creature pages.
+    This is the CSS file that will stylize the welcome page for this website.
 */ 
 
-/* Will move the GitHub logo to the bottom center of the screen */
+/* Moves the GitHub logo and the developer text to the bottom center of the screen */
 .bottom-center {
-    position: fixed;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
     margin-bottom: 10px;
+    transform: translateX(-50%);
 }
 
-/* Will give the h3 element on the welcome page some bottom padding */
+/* Gives the "h3" element on the welcome page some bottom padding from the text */
 .bottom-padding {
     padding-bottom: 8px;
 }
 
-/* Will move each row of animal names to the center of the screen */
+/* Moves each row of animal names to the center of the screen */
 .center-section {
-    justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Styles the "developer text" in the footer */
 .developer-text {
-    text-align: center;
-    font-size: 16px;
     color: rgb(110, 110, 110);
+    font-size: 16px;
+    text-align: center;
 }
 
 /* Gives the GitHub logo in the footer some bottom padding */
@@ -40,33 +40,45 @@
 
 /* Overall style of the "intro" at the top of the page */
 .intro {
-    position: relative;
     background-color: rgb(222, 134, 190);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
     width: 40%;
 }
 
 /* Overall style of h3's "intro" */
 .intro-two {
-    position: relative;
-    background-color: rgb(255, 205, 237);
-    margin-inline: auto;
-    width: 80%;
+    background-color: rgb(255,203,228);
     box-sizing: border-box;
+    margin-inline: auto;
     padding-left: 30px;
     padding-right: 30px;
+    position: relative;
+    width: 80%;
 }
 
 /* Overall style of h4's "intro" */
 .intro-three {
-    position: relative;
-    background-color: rgb(255, 205, 237);
+    background-color: rgb(255,203,228);
     margin-inline: auto;
+    position: relative;
     width: 50%;
 }
 
-/* Will style the text in italics */
+/* Gives "Founded Dec. 2024!" a bit of a vertical margin */
+.intro-founded-vertical-margin {
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+/* Gives "Creature Chronicles" a bit of a vertical margin */
+.intro-title-vertical-margin {
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+/* Styles the text in italics */
 .italics {
     font-style: italic;
 }
@@ -74,22 +86,22 @@
 /* CSS for the "Poppins Light" font */
 .poppins-light {
     font-family: "Poppins", serif;
-    font-weight: 300;
     font-style: normal;
+    font-weight: 300;
 }
   
 /* CSS for the "Poppins Light" font */
 .poppins-regular {
     font-family: "Poppins", serif;
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
 }
 
-/* Will predefine the 3 animal buttons in each row to be on the same line */
+/* Predefines the 3 animal buttons in each row to be on the same line */
 .row-align {
     display: flex;
-    justify-content: center;
     gap: 70px;
+    justify-content: center;
     padding-bottom: 40px;
 }
 
@@ -100,8 +112,8 @@
 
 /* Adds a top and bottom margin to h4's "intro" */
 .vertical-margins {
-    margin-top: 30px;
     margin-bottom: 36px;
+    margin-top: 30px;
 }
 
 /* Animal text regular url color */
@@ -121,64 +133,67 @@
 
 /* Animal text visited url color */
 #Animalstext:visited {
-    color: rgb(125, 85, 125);
+    color: rgb(146,52,145);
 }
 
 /* Establishes the size of the GitHub logo */
 #Git {
+    margin-bottom: 5px;
     height: 50px;
     width: 50px;
-    margin-bottom: 5px;
 }
 
 /* Changes the GitHub logo to appear white when hovered over */
 #Git:hover {
     content: url(/Media/githubpink.png);
+    margin-bottom: 5px;
     height: 50px;
     width: 50px;
-    margin-bottom: 5px;
 }
 
 /* Creates a fake rounded button behind the animal text links */
 #Rfbutton {
-    background-color: rgb(202, 118, 181);
+    align-items: center;
+    background-color: rgb(209, 127, 187);
     border-radius: 20px;
-    width: 180px;
-    height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 50px;
+    width: 180px;
     text-align: center;
 }
 
 /* Fake rounded button hover color */
 #Rfbutton:hover {
-    background-color: rgb(240, 139, 215);
+    align-items: center;
+    background-color: rgb(243, 144, 218);
     border-radius: 20px;
-    width: 180px;
-    height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 50px;
+    width: 180px;
     text-align: center;
 }
 
-/* Will give the specified element rounded corners */
+/* Gives the specified element rounded corners */
 #Round {
     border-radius: 10px;
 }
 
-body {
-    background-image: url(/Media/pawbg.jpg);
-    background-color: rgb(246, 201, 230);
-    font-family: "Poppins", serif;
-}
-
-h1, h3, h4, p {
-    text-align: center;
-}
-
+/* "anchor"'s styling */
 a {
     text-decoration: none;
     font-size: 18px;
+}
+
+/* "body"'s styling */
+body {
+    background-color: rgb(246, 201, 230);
+    background-image: url(/Media/pawbg.jpg);
+    font-family: "Poppins", serif;
+}
+
+/* "h1, h3, h4, p"'s styling */
+h1, h3, h4, p {
+    text-align: center;
 }
