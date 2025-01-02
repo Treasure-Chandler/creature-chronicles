@@ -4,83 +4,120 @@
     This is the CSS file that will stylize the welcome page for this website.
 */ 
 
-/* Moves the GitHub logo and the developer text to the bottom center of the screen */
+/* Animal button styling */
+.animal-button {
+    align-items: center;
+    background-color: rgb(209, 128, 187);
+    border: 2px solid rgb(145, 87, 130);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight: 400;
+    height: 50px;
+    width: 180px;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.animal-button:hover {
+    background-color: rgb(243, 144, 218);
+    color: rgb(66, 0, 58);
+}
+
+/* Github logo position */
 .bottom-center {
     bottom: 0;
     left: 50%;
     position: fixed;
-    margin-bottom: 10px;
     transform: translateX(-50%);
-}
-
-/* Gives the "h3" element on the welcome page some bottom padding from the text */
-.bottom-padding {
-    padding-bottom: 8px;
 }
 
 /* Moves each row of animal names to the center of the screen */
 .center-section {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    max-width: 800px;
     text-align: center;
+    width: 100%;
 }
 
-/* Styles the "developer text" in the footer */
+/* "h4" styling */
+.creature-heading {
+    background-color: rgb(255, 203, 228);
+    border: 2px solid rgb(207, 162, 184);
+    font-size: 1.05em;
+    margin-bottom: 30px;
+    margin-inline: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    width: 800px;
+}
+
+/* Footer's "developer text" styling */
 .developer-text {
     color: rgb(110, 110, 110);
     font-size: 16px;
+    margin-bottom: 0;
     text-align: center;
 }
 
-/* Gives the GitHub logo in the footer some bottom padding */
-.git-bottom-padding {
-    padding-bottom: 38px;
+/* Footer's GitHub logo styiling */
+.github-logo {
+    background-image: url('../Media/github.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 55px;
+    width: 55px;
+    margin-bottom: -15px;
+    transition: background-image 0.3s ease-in-out;
 }
 
-/* Overall style of the "intro" at the top of the page */
+.github-logo:hover {
+    background-image: url('../Media/githubpink.png');
+}
+
+/* Header's "intro" styling */
 .intro {
     background-color: rgb(222, 134, 190);
-    margin-left: auto;
-    margin-right: auto;
+    border: 2px solid rgb(145, 87, 130);
+    border-radius: 10px;
+    margin: 0 auto;
     position: relative;
+    text-align: center;
     width: 40%;
 }
 
-/* Overall style of h3's "intro" */
-.intro-two {
+/* Intro message styling */
+.intro-message {
     background-color: rgb(255,203,228);
+    border: 2px solid rgb(207, 162, 184);
     box-sizing: border-box;
     margin-inline: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    line-height: 1.6;
+    padding: 10px 30px 10px 30px;
     position: relative;
-    width: 80%;
+    margin-bottom: 0px;
 }
 
-/* Overall style of h4's "intro" */
-.intro-three {
-    background-color: rgb(255,203,228);
-    margin-inline: auto;
-    position: relative;
-    width: 50%;
-}
-
-/* Gives "Founded Dec. 2024!" a bit of a vertical margin */
-.intro-founded-vertical-margin {
-    margin-top: 0;
-    padding-bottom: 10px;
-}
-
-/* Gives "Creature Chronicles" a bit of a vertical margin */
-.intro-title-vertical-margin {
+.intro-message-section {
     margin-bottom: 0;
+    max-width: 80%;
+}
+
+/* "Creature Chronicles" styling */
+.intro-title {
+    font-size: 2.25em;
+    margin: 0;
     padding-top: 10px;
 }
 
-/* Styles the text in italics */
-.italics {
+/* "Founded Dec. 2024!" styling */
+.intro-founded {
     font-style: italic;
+    margin: 10px 0 0 0;
+    padding-bottom: 10px;
 }
 
 /* CSS for the "Poppins Light" font */
@@ -90,7 +127,7 @@
     font-weight: 300;
 }
   
-/* CSS for the "Poppins Light" font */
+/* CSS for the "Poppins Regular" font */
 .poppins-regular {
     font-family: "Poppins", serif;
     font-style: normal;
@@ -102,77 +139,7 @@
     display: flex;
     gap: 70px;
     justify-content: center;
-    padding-bottom: 40px;
-}
-
-/* Gives some top padding to the "h3" in the first section */
-.top-padding {
-    padding-top: 15px;
-}
-
-/* Adds a top and bottom margin to h4's "intro" */
-.vertical-margins {
-    margin-bottom: 36px;
-    margin-top: 30px;
-}
-
-/* Animal text regular url color */
-#Animalstext {
-    color: white;
-}
-
-/* Animal text hovered url color */
-#Animalstext:hover {
-    color: rgb(66, 0, 58);
-}
-
-/* Animal text active url color */
-#Animalstext:active {
-    color: rgb(255, 205, 238);
-}
-
-/* Animal text visited url color */
-#Animalstext:visited {
-    color: rgb(146,52,145);
-}
-
-/* Establishes the size of the GitHub logo */
-#Git {
-    margin-bottom: 5px;
-    height: 50px;
-    width: 50px;
-}
-
-/* Changes the GitHub logo to appear white when hovered over */
-#Git:hover {
-    content: url(/Media/githubpink.png);
-    margin-bottom: 5px;
-    height: 50px;
-    width: 50px;
-}
-
-/* Creates a fake rounded button behind the animal text links */
-#Rfbutton {
-    align-items: center;
-    background-color: rgb(209, 127, 187);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    width: 180px;
-    text-align: center;
-}
-
-/* Fake rounded button hover color */
-#Rfbutton:hover {
-    align-items: center;
-    background-color: rgb(243, 144, 218);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    width: 180px;
-    text-align: center;
+    padding-bottom: 30px;
 }
 
 /* Gives the specified element rounded corners */
@@ -186,14 +153,66 @@ a {
     font-size: 18px;
 }
 
-/* "body"'s styling */
-body {
-    background-color: rgb(246, 201, 230);
+/* General page layout */
+body, html {
     background-image: url(/Media/pawbg.jpg);
+    flex-direction: column;
     font-family: "Poppins", serif;
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+/* Footer styling */
+footer {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 0;
 }
 
 /* "h1, h3, h4, p"'s styling */
 h1, h3, h4, p {
     text-align: center;
+}
+
+/* Main content styling */
+main {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* Emphasizes a flexbox Layout for full height */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .intro {
+        width: 80%;
+    }
+
+    .row-align {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .animal-button {
+        width: 100%;
+        max-width: 200px;
+    }
 }

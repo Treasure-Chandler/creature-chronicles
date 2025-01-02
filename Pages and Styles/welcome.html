@@ -12,83 +12,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Creature Chronicles</title>
         <link rel="stylesheet" href="welcome.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- "Poppins" font code supplied from Google Fonts -->
+    
+        <!-- "Poppins" font from Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="intro" id="Round">
-            <h1 class="intro-title-vertical-margin">Creature Chronicles</h1>
-            <p class="italics intro-founded-vertical-margin">Founded Dec. 2024!</p>
-        </div>
+        <!-- Semantic header -->
+        <header class="intro">
+            <h1 class="intro-title">Creature Chronicles</h1>
+            <p class="italics intro-founded">Founded Dec. 2024!</p>
+        </header>
         <main>
-            <div>
-                <section>
-                    <h3 class="bottom-padding poppins-regular intro-two top-padding" id="Round">
-                        Welcome to the Creature Chronicles! :3 <br/>
-                        Below you can view media and read facts about these silly
-                        creatures by clicking on their respective pages! <br/>
-                        You can always request new animals to be added by making
-                        a pull request in my GitHub page, which will be linked below! <br/>
-                        I am currently in the process of relearning HTML, and I was inspired
-                        to make this page in order to execute my knowledge. <br/>
-                        I hope you enjoy my silly little encyclopedia that I am making!
-                    </h3>
-                </section>
-            </div>
+            <section class="intro-message-section">
+                <h3 class="intro-message poppins-regular" id="Round">
+                    Welcome to the Creature Chronicles! :3 <br/>
+                    Below you can view media and read facts about these silly
+                    creatures by clicking on their respective pages! <br/>
+                    You can always request new animals to be added by making
+                    a pull request in my GitHub page, which will be linked below! <br/>
+                    I am currently in the process of relearning HTML, and I was inspired
+                    to make this page in order to execute my knowledge. <br/>
+                    I hope you enjoy my silly little encyclopedia that I am making!
+                </h3>
+            </section>
             <div>
                 <section class="center-section">
-                    <h4 class="intro-three poppins-light vertical-margins" id="Round">
+                    <h4 class="creature-heading poppins-light" id="Round">
                         Wanna learn about a specific creature? Click on its respective button!
                     </h4>
-                    <article class="row-align">
-                        <a href="cats.html" id="Animalstext">
-                            <div id="Rfbutton">Cats</div>
-                        </a>
-                        <a href="capybaras.html" id="Animalstext">
-                            <div id="Rfbutton">Capybaras</div>
-                        </a>
-                        <a href="dogs.html" id="Animalstext">
-                            <div id="Rfbutton">Dogs</div>
-                        </a>
-                    </article>
-                    <article class="row-align">
-                        <a href="ferrets.html" id="Animalstext">
-                            <div id="Rfbutton">Ferrets</div>
-                        </a>
-                        <a href="guineapigs.html" id="Animalstext">
-                            <div id="Rfbutton">Guinea Pigs</div>
-                        </a>
-                        <a href="crows.html" id="Animalstext">
-                            <div id="Rfbutton">Crows</div>
-                        </a>
-                    </article>
-                    <article class="row-align">
-                        <a href="hyraxes.html" id="Animalstext">
-                            <div id="Rfbutton">Hyraxes</div>
-                        </a>
-                        <a href="seabunnies.html" id="Animalstext">
-                            <div id="Rfbutton">Sea Bunnies</div>
-                        </a>
-                        <a href="seabunnies.html" id="Animalstext">
-                            <div id="Rfbutton">Shoebills</div>
-                        </a>
-                    </article>
+
+                    <!-- First row of buttons -->
+                    <div class="row-align">
+                        <a href="cats.html" class="animal-button">Cats</a>
+                        <a href="capybaras.html" class="animal-button">Capybaras</a>
+                        <a href="dogs.html" class="animal-button">Dogs</a>
+                    </div>
+
+                    <!-- Second row of buttons -->
+                    <div class="row-align">
+                        <a href="ferrets.html" class="animal-button">Ferrets</a>
+                        <a href="guineapigs.html" class="animal-button">Guinea Pigs</a>
+                        <a href="crows.html" class="animal-button">Crows</a>
+                    </div>
+
+                    <!-- Third row of buttons -->
+                    <div class="row-align">
+                        <a href="hyraxes.html" class="animal-button">Hyraxes</a>
+                        <a href="seabunnies.html" class="animal-button">Sea Bunnies</a>
+                        <a href="shoebills.html" class="animal-button">Shoebills</a>
+                    </div>
                 </section>
             </div>
         </main>
         <footer>
-            <div>
-                <a href="https://github.com/Treasure-Chandler" target=_blank>
-                    <img src="../Media/github.png" alt="GitHub" class="bottom-center git-bottom-padding" id="Git">       
-                </a>
-            </div>
-            <div>
-                <p class="bottom-center developer-text">Developed by Treasure Chandler</p>
-            </div>
+            <a href="https://github.com/Treasure-Chandler" target="_blank" class="github-logo"></a>
+            <p class="developer-text">Developed by Treasure Chandler</p>
         </footer>
     </body>
 </html>
