@@ -4,6 +4,22 @@
     This is the CSS file that will stylize the welcome page for this website.
 */ 
 
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    /* Vertical scrollbars */
+    width: 16px;
+    /* Horizontal scrollbars */
+    height: 16px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 209, 237);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(189, 124, 173, 0.5);
+  }
+
 /* Animal button styling */
 .animal-button {
     align-items: center;
